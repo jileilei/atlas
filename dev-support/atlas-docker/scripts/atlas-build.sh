@@ -93,7 +93,8 @@ fi
 #sysctl -a | grep files
 #
 #
-#echo "Ulimit value after:"
+ulimit -n 9240
+echo "Ulimit value after:"
 #ulimit -n
 #
 ## 退出，由于这将是容器的主进程，因此容器也将停止
